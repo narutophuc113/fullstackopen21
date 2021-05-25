@@ -8,13 +8,22 @@ const Header = (props) => {
     )
 }
 
-const Content = (props) => {
-    var listPart=props.parts.map((part,index)=>
-        <p>{part} {props.exercises[index]}</p>
-    )
+const Part=(props)=>{
     return(
         <>
-            {listPart}
+            <p>
+                {props.part} {props.exercise}
+            </p>
+        </>
+    )
+}
+
+const Content = (props) => {
+    return(
+        <>
+            <Part part={props.parts[0]} exercise={props.exercises[0]}/>
+            <Part part={props.parts[1]} exercise={props.exercises[1]}/>
+            <Part part={props.parts[2]} exercise={props.exercises[2]}/>
         </>
     )
 }
