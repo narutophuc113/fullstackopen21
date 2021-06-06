@@ -19,9 +19,7 @@ const update = (id, newObject) => {
 
 const deletePhonebook = (id) => {
     const request = axios.delete(`${baseUrl}/${id}`)
-    return request.then(response => {
-        return response.data
-    })
+    return request.then(response => response.data)
 }
 
 const phonebookService = {getAll, create, update, deletePhonebook};
