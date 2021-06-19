@@ -40,7 +40,7 @@ const App = () => {
                         }, 3000);
                     })
                     .catch(error => {
-                        setMessage(`Information of ${found.name} has already been removed from server`);
+                        setMessage(`${error.response.data.error}`);
                         setType('error');
 
                         setTimeout(() => {
@@ -67,7 +67,8 @@ const App = () => {
                     }, 3000);
                 })
                 .catch(error => {
-                    setMessage(`Add fail`);
+                    console.log(error.response.data)
+                    setMessage(`${error.response.data.error}`);
                     setType('error');
 
                     setTimeout(() => {
