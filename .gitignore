@@ -2,3 +2,10 @@
 /part1/courseinfo/.idea
 /part2/courseinfo/.idea
 /part2/phonebook/.idea
+/part4/blog_list_backend/.idea
+/part4/blog_list_backend/node_modules
+/part5/bloglist-frontend/.idea
+/part6/redux-anecdotes/.idea
+/part6/unicafe-redux/.idea
+.idea
+node_modules
